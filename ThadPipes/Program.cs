@@ -107,14 +107,7 @@ namespace ThadPipes
                     }
                 }
 
-                int[] tmp = new int[endIndex - startIndex + 1];
-                Array.Copy(pipes, startIndex, tmp, 0, tmp.Length);
-                pipes = tmp;
-
                 int[] pipeHeight = new int[pipes.Length];
-
-                startIndex = 0;
-                endIndex = pipes.Length - 1;
 
                 bool moveRight = pipes[startIndex] < pipes[endIndex];
 
